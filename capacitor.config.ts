@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'io.qrscanner.starter',
   appName: 'qrScannerApp',
   webDir: 'www',
   bundledWebRuntime: false

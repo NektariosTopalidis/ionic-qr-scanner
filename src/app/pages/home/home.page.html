@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content overflow-scroll=“true”> 
 
   <ion-button expand="full" (click)="startScan()">
     <ion-icon slot="start" name="scan-outline"></ion-icon>
@@ -18,7 +18,8 @@
     Reset
   </ion-button>
 
-  <video #video [hidden]="!scanActive" width="100%"></video>
+  <video #video [hidden]="!scanActive" width="100%" data-tap-disable="true"></video>
+  <canvas #canvas hidden></canvas>
 
   <ion-button expand="full" (click)="stopScan()" color="warning" *ngIf="scanActive">
     <ion-icon slot="start" name="refresh"></ion-icon>
